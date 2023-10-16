@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Output in JavaScript</title>
+</head>
+<body>
+    <script>
+        //Type 1
+        // Prompt the user for input
+       /** let userInput = prompt("Please enter something:");
+
+        // Display the user's input
+        document.write("You entered: " + parseINT(userInput));
+      */
+      //Type 2
+      const readline = require('node:readline');
+
+      const rl = readline.createInterface({
+      input: process.stdin,
+      output: process.stdout
+      });
+
+      rl.question('Please enter something: ', (userInput) => {
+     console.log('You entered:', userInput);
+     rl.close();
+     });
+
+
+
+
+    </script>
+</body>
+</html>

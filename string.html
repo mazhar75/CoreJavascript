@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Example</title>
+</head>
+<body>
+
+
+    <script>
+       // Step 1: Take string input
+let userInput = prompt("Please enter a string:");
+
+// Step 2: Iterate over the characters of the string and perform an operation
+for (let i = 0; i < userInput.length; i++) {
+    let currentChar = userInput[i];
+
+    // Perform an operation (for example, convert characters to uppercase)
+    let uppercaseChar = currentChar.toUpperCase();
+
+    // Display the result
+    document.write(`Original: ${currentChar}, Uppercase: ${uppercaseChar} <br>`);
+}
+
+    </script>
+</body>
+</html>
